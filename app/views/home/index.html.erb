@@ -1,0 +1,11 @@
+<h1>여기는 새로운 게시물 목록이 나올 페이지입니다!</h1>
+<a href='/home/new'> 새로운 글 쓰기</a>
+
+<br><br>
+<%@posts.each do |x|%>
+제목 : <%=x.title%> <br>
+내용 : <%=x.content%> <br>
+<a href= '/home/destroy/<%=x.id%>' style='text-decoration:none;'>[삭제]</a><br>
+<a href= '/home/edit/<%=x.id%>' style='text-decoration:none;'>[수정]</a><br>
+------------------------------<br>
+<%end%>

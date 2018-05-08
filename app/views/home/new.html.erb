@@ -1,0 +1,7 @@
+<h1>NEW POSTS HERE!</h1>
+<form action='/home/create' method='post'>
+    <%=hidden_field_tag :authenticity_token, form_authenticity_token %>
+    Title :   <input type='text' name='post_title'><br><br>
+    Content : <textarea name='post_content' cols=40 rows=10></textarea><br><br>
+    <input type='submit' value = '제출'>
+</form>
